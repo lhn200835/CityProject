@@ -18,9 +18,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         main_choose_city = findViewById(R.id.main_choose_city);
+
         main_choose_city.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 startActivityForResult(new Intent(MainActivity.this,CityPickerActivity.class),RequestCodeInfo.GETCITY);
             }
         });
